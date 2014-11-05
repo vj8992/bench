@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvresult"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="94dp"
+        android:onClick="calculate"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn4"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/btn4"
+        android:onClick="calculate"
+        android:text="/" />
+
+    <EditText
+        android:id="@+id/etone"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="enter first number" />
+
+    <EditText
+        android:id="@+id/ettwo"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn4"
+        android:layout_alignLeft="@+id/etone"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="enter second number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn3"
+        android:layout_alignBottom="@+id/btn3"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/btn3"
+        android:onClick="calculate"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_alignBottom="@+id/btn2"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/btn2"
+        android:onClick="calculate"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="66dp"
+        android:text="Results"
+        android:textSize="30dp" />
+
+</RelativeLayout>

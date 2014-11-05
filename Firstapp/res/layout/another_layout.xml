@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText" >
+
+    <EditText
+        android:id="@+id/etlname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter your last name" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etlname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:text="results will be displayed here"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="enter your first name" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etlname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="greetuser"
+        android:text="submit" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp" />
+
+</RelativeLayout>
